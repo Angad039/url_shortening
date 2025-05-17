@@ -18,16 +18,4 @@ export default defineConfig({
     // host: '0.0.0.0',
     // port: 3000,
   },
-  build: {
-    // bump the chunk-size warning limit to 1000 kB
-    chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      output: {
-        // example manual chunk splitting:
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'framer-motion'],
-        }
-      }
-    }
-  }
 })
